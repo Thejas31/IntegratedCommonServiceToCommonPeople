@@ -13,9 +13,11 @@
         <div class="leftHead container">
             <h4>HOMEPAGE</h4>
         </div>
-        <div class="container rightHead d-flex justify-content-end">
-            <a class="container" href="loginPage.html"><strong>Login-in</strong></a>
-            <a class="container"><strong>Register</strong></a>
+        <div class="container rightHead">
+            <div class="row justify-content-end">
+                <a class="col-auto loginButton" href="loginPage.html"><strong>Login-in</strong></a>
+                <a class="col-auto registerButton" href="#"><strong>Register</strong></a>
+            </div>
         </div>
     </header>
 
@@ -50,7 +52,7 @@
         <div class="subServices container Esub"> 
             <h2>EDUCATION</h2>
             <div class="image container d-flex justify-content-end">
-                <p class="container"><strong>This section will guide you to nearby and best education facilities for your children, and will </strong></p>
+                <p class="container"><strong>This section will guide you to nearby and best education facilities for your children, and will connect you to your nearest stationary and bookstores. </strong></p>
                 <img src="images_and_icons\Education.png" alt="Transport Image">
             </div>
             <div class="nextSign">
@@ -63,7 +65,7 @@
         <div class="subServices container Fsub"> 
             <h2>FINANCE</h2>
             <div class="image container d-flex justify-content-end">
-                <p class="container"><strong>This section will guide you to the world of transport and will link you to the required service providers in the field of travels as well.</strong></p>
+                <p class="container"><strong>This section will guide you to the world of finance and will act as a guide to manage your finances, ie. from taking loans to insaurances it will try to cover everything according to the needs of common people of India</strong></p>
                 <img src="images_and_icons\finance.png" alt="Finance Image">
             </div>
             <div class="nextSign">
@@ -76,7 +78,7 @@
         <div class="subServices container Gsub"> 
             <h2>GOVERNMENT SCHEMES AND SERVICES</h2>
             <div class="image container d-flex justify-content-end">
-                <p class="container"><strong>This section will guide you to the world of transport and will link you to the required service providers in the field of travels as well.</strong></p>
+                <p class="container"><strong>This section will give you a link to every government schemes and will act as a guide to take benefits from those services. This section focuses more on Central government schemes adding some of the state government schemes as well.</strong></p>
                 <img src="images_and_icons\Govnt.png" alt="GovtOFIndiaInsignia">
             </div>
             <div class="nextSign">
@@ -89,7 +91,7 @@
         <div class="subServices container HSsub"> 
             <h2>HOUSE SERVICES</h2>
             <div class="image container d-flex justify-content-end">
-                <p class="container"><strong>This section will guide you to the world of transport and will link you to the required service providers in the field of travels as well.</strong></p>
+                <p class="container"><strong>This section will give you the information about the service providers that are in the field of house services and will help you to connect with them.</strong></p>
                 <img src="images_and_icons\houseServices.png" alt="House Services">
             </div>
             <div class="nextSign container ">
@@ -100,6 +102,27 @@
         </div>
 
     </div>
+
+    <footer>
+        <div class="foot container-fluid">
+            <h1 style="margin-top: 10px;">CONTACT US</h1>
+            <p>You can reach us out to make some changes or to add more services by filling us the following form.</p>
+            <div class="container main">
+                <form class="Form">
+                    <h2 style="margin-top: 10px;">CONTACT US</h2>
+                    <input style="margin-top: 10px;" type="text" placeholder="YOUR NAME" name="name" class="Entry" required>
+                    <input style="margin-top: 10px;" type="email" placeholder="Enter you Email" name="email" class="Entry" required>
+                    <textarea style="margin-top: 10px;" name="message" placeholder="Enter your suggestion or quieries" class="textA"></textarea>
+                    <button>Submit<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg></button>
+                </form>
+                <!-- <div class="image">
+                    <img src="images_and_icons\contactUs.png" alt="Contact Us">
+                </div> -->
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
