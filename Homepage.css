@@ -15,12 +15,12 @@ header{
     border-radius: 5px;
 }
 
+/* Right head before the user has logged in */
+
 .rightHead{
     display: flex;
     justify-content: flex-end;
 }
-
-
 
 .rightHead a{
     margin-left: 10px;
@@ -41,6 +41,43 @@ header{
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     /* justify-content: center; */
 }
+
+
+/* Right head after the user has logged in */
+.righthead{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.righthead a{
+    margin-left: 10px;
+    color: black;
+    border: 2px solid;
+    width: fit-content;
+    border-radius: 6px;
+    /* justify-content: center; */
+}
+
+.righthead a:hover{
+    margin-left: 10px;
+    color: black;
+    border: 3px solid;
+    width: fit-content;
+    border-radius: 6px;
+    /* justify-content: center; */
+}
+
+.righthead ul{
+    background-color: rgb(232, 225, 216);
+}
+.righthead ul a:hover{
+    background-color: rgb(109, 41, 41);
+    color: white;
+}
+
+/* Header completed */
+
+
 
 .subServices{
     margin-top: 40px;
