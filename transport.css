@@ -96,7 +96,7 @@ nav li:hover{
 .imageButtons{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    /* width: 30%; */
     align-items: center;
     justify-content: center;
 }
@@ -106,7 +106,8 @@ nav li:hover{
 }
 
 .buttons a{
-    /* justify-content: center; */
+    justify-content: center;
+    align-items: center;
     color: black;
     border-radius: 10px;
     background-color: rgba(255, 252, 252, 0.385);
@@ -115,6 +116,8 @@ nav li:hover{
     transition: transform 0.3s, border-color 0.3s, background-color 0.3s;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.218);
     margin-left: 10px;
+    width: fit-content;
+    /* margin-top: 40px; */
 }
 
 .buttons svg{
