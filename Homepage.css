@@ -79,6 +79,27 @@ header{
 
 
 
+/* reminder section */
+
+.reminder{
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 15px;
+    align-items: center;
+    height: 8;
+    color: rgb(44, 168, 168);
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid; */
+}
+
+.reminder svg{
+    margin-right: 10px;
+}
+
+.reminder p{
+    margin-top: 15px;
+}
+
 .subServices{
     margin-top: 40px;
     display: flex;
@@ -190,6 +211,15 @@ image{
 }
 
 .Entry{
+    background-color: rgba(240, 248, 255, 0.579);
+    height: 40px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Entry:hover{
+    background-color: rgb(240, 248, 255);
     height: 40px;
     border: 1px solid;
     padding: 10px;
@@ -197,6 +227,14 @@ image{
 }
 
 .textA{
+    background-color: rgba(240, 248, 255, 0.595);
+    border: 1px solid;
+    border-radius: 10px;
+    height: 10pc;
+}
+
+.textA:hover{
+    background-color: rgba(240, 248, 255, 0.942);
     border: 1px solid;
     border-radius: 10px;
     height: 10pc;
