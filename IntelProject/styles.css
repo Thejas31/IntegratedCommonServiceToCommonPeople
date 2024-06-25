@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77b300 3px solid;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header li {
+    padding: 10px 20px;
+}
+
+section {
+    padding: 20px;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+h1{
+    color: lemonchiffon;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+a {
+    color: #77b300;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Styles for the Jump to Top button */
+#topBtn {
+    display: block; /* Ensure it is always displayed */
+    position: fixed; /* Fixed position so it is always visible */
+    bottom: 20px; /* Position the button 20px from the bottom */
+    right: 30px; /* Position the button 30px from the right */
+    z-index: 99; /* Ensure the button is on top of other elements */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increased font size */
+    opacity: 0.8; /* Slight transparency */
+    transition: opacity 0.3s; /* Smooth transition on hover */
+}
+
+#topBtn:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+/* Button-like style for links */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #066713;
+    border: palegoldenrod;
+    border-radius: 3.5px;
+    text-align: center;
+    text-decoration: aqua;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#topBtn {
+    display: block; /* Ensure it is always displayed */
+    position: fixed; /* Fixed position so it is always visible */
+    bottom: 20px; /* Position the button 20px from the bottom */
+    right: 30px; /* Position the button 30px from the right */
+    z-index: 99; /* Ensure the button is on top of other elements */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increased font size */
+    opacity: 0.8; /* Slight transparency */
+    transition: opacity 0.3s; /* Smooth transition on hover */
+}
+
+#topBtn:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
