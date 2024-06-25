@@ -312,3 +312,27 @@ nav li:hover{
     display: flex;
     align-items: center;
 }
+
+
+
+#topBtn {
+    display: block; /* Ensure it is always displayed */
+    position: fixed; /* Fixed position so it is always visible */
+    bottom: 20px; /* Position the button 20px from the bottom */
+    right: 30px; /* Position the button 30px from the right */
+    z-index: 99; /* Ensure the button is on top of other elements */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increased font size */
+    opacity: 0.8; /* Slight transparency */
+    transition: opacity 0.3s; /* Smooth transition on hover */
+}
+
+#topBtn:hover {
+    opacity: 1; /* Full opacity on hover */
+}
