@@ -38,6 +38,19 @@
                 showMessage('There was an error submitting your form. Please try again.');
             }
         }
+
+        function showLoginAlert(event) {
+            event.preventDefault();
+            alert("Please Log in First");
+        }
+
+        // Add event listener to all anchor tags in subsections
+        document.addEventListener('DOMContentLoaded', () => {
+            const subsectionLinks = document.querySelectorAll('.subServices a');
+            subsectionLinks.forEach(link => {
+                link.addEventListener('click', showLoginAlert);
+            });
+        });
     </script>
     <style>
         #message {
