@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Finances</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="financeSection\finance.css">
+
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><b>FINANCES</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="HomePageAfterLogin.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="financeSection\monthlyBudgetPlanner.html">MBP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Finance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Govt. Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="profile">
+            <a class="dropdown-toggle" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <strong>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg> USER 
+                </strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item List" href="homePage.html">LogOut</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="sections container-fluid" style="margin-top: 20px;">
+        
+        <div class="container Fsec Natm">
+            <div class="H">
+                <h4>Find My Nearest ATMs</h4>
+                <p>Click on the button to get info of your nearest ATM Machines</p>
+            </div>
+            <button class="nearest-btn" onclick="location.href='https://www.google.com/maps/search/atm+near+me/@9.6452881,76.3343387,13z/data=!3m1!4b1?entry=ttu'">Find Nearby ATM</button>
+        </div>
+
+        <div class="container Fsec Budget">
+            <div class="H">
+                <h4>Monthly Budget Planner</h4>
+                <p>Click on the button to Calculate your Monthly Expenditure and plan your Monthly Budget</p>
+            </div>
+            <a href="financeSection\monthlyBudgetPlanner.html">Monthly Budget Planner</a>
+        </div>
+
+    </div>
+    <footer>
+        <div class="foot container-fluid">
+            <h1 style="margin-top: 10px;">CONTACT US</h1>
+            <p>You can reach us out to make some changes or to add more services by filling us the following form.</p>
+            <div class="container main">
+                <form class="Form" action="/submit-form" method="POST">
+                    <h2 style="margin-top: 10px;">CONTACT US</h2>
+                    <input style="margin-top: 10px;" type="text" placeholder="YOUR NAME" name="name" class="Entry" required>
+                    <input style="margin-top: 10px;" type="email" placeholder="Enter your Email" name="email" class="Entry" required>
+                    <textarea style="margin-top: 10px;" name="message" placeholder="Enter your suggestion or queries" class="textA"></textarea>
+                    <button type="submit">Submit<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg></button>
+                </form>
+            </div>
+            <p>&copy; 2024 INTEL_Unnati_Industry_Training_Program_Project</p>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Go to Top</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

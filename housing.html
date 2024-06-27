@@ -6,6 +6,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="housing.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function updateLink() {
+            var input = document.getElementById('placeInput').value;
+            var link1 = document.getElementById('dynamicLink1');
+            var link2 = document.getElementById('dynamicLink2');
+            var link3 = document.getElementById('dynamicLink3');
+            var link4 = document.getElementById('dynamicLink4');
+            var link5 = document.getElementById('dynamicLink5');
+            var link6 = document.getElementById('dynamicLink6');
+            var encodedInput = encodeURIComponent(input);
+            link1.href = "https://www.google.com/maps/search/Food+suppliers+in+" + encodedInput;
+            link2.href = "https://www.google.com/maps/search/Water+suppliers+in+" + encodedInput;
+            link3.href = "https://www.google.com/maps/search/Plumbers+in+" + encodedInput;
+            link4.href = "https://www.google.com/maps/search/Electricans+in+" + encodedInput;
+            link3.href = "https://www.google.com/maps/search/Carpenters+in+" + encodedInput;
+            link4.href = "https://www.google.com/maps/search/Painters+in+" + encodedInput;
+        }
+    </script>
+
     <title>Housing services</title>
 </head>
 <body>
@@ -78,7 +97,7 @@
             </div>
         </div> 
 
-        <!-- <div class="subsections container Metro ">
+        <div class="subsections container Metro ">
             <div class="text container-fluid">
                 <h3>Maid Details</h3>
                 <p>This section will provide you with the links to access contacts which are valuable for individuals or households looking for assistance with various household chores, cleaning tasks, or other domestic duties.</p>
@@ -87,7 +106,7 @@
                 justify-content-end 
                 flex-row border">
                 <a href="Metro.html"><b>Click here</b></a>
-                <img src="images_and_icons\metro.png" >
+                <!-- <img src="images_and_icons\metro.png" > -->
             </div>
         </div> 
 
@@ -99,13 +118,21 @@
             <div class="LinkImage container-fluid d-flex 
                 justify-content-end 
                 flex-row border">
-                <a href="Metro.html"><b>Click here</b></a>
-                 <img src="images_and_icons\metro.png" > 
+                <a href="Metro.html"><b></b></a>
+                <!-- <img src="images_and_icons\metro.png" > -->
+            </div>
+            <div class="listImage container-fluid ">
+                <label for="placeInput">Enter place name:</label>
+                <input type="text" id="placeInput" oninput="updateLink()">
+                <a id="dynamicLink3" href="https://www.google.com/maps/search/Plumbers+in+" target="_blank">Click here for Plumbers</a>
+                <a id="dynamicLink4" href="https://www.google.com/maps/search/Electricians+in+" target="_blank">Click here for Electricians</a>
+                <a id="dynamicLink5" href="https://www.google.com/maps/search/Carpenters+in+" target="_blank">Click here for Carpenters</a>
+                <a id="dynamicLink6" href="https://www.google.com/maps/search/Painters+in+" target="_blank">Click here for Painters</a>
             </div>
         </div> 
-    </div> -->
+    </div>
 
-    <!-- <div class="subsections container Metro ">
+    <div class="subsections container Metro ">
         <div class="text container-fluid">
             <h3>Food and water suppliers</h3>
             <p>This section will provide you with the links to access to essential information about suppliers who provide food and water products. This information is crucial for individuals, businesses, and organizations looking to source these necessities.</p>
@@ -113,20 +140,17 @@
         <div class="LinkImage container-fluid d-flex 
             justify-content-end 
             flex-row border">
-            <a href="Metro.html"><b>Click here</b></a>
-             <img src="images_and_icons\metro.png"> 
+            <a href="Metro.html"><b></b></a>
+            <!-- <img src="images_and_icons\metro.png"> -->
         </div>
         <div class="listImage container-fluid ">
-            <div class="list">
-                <a href="https://tnstc.in/home.html"><li>Tamil Nadu</li></a>
-                <a href="https://www.keralartc.com/"><li>Kerala</li></a>
-                <a href="https://www.ksrtc.in/oprs-web/"><li>Karnataka</li></a>
-                <a href="https://www.apsrtc.ap.gov.in/"><li>Andhra Pradesh</li></a>
-                <a href="https://www.tsrtconline.in/oprs-web/?ref=worldsitelink"><li>Telangana</li></a>
-                <a href=https://msrtc.maharashtra.gov.in/GeneralPages/Home.aspx"><li>Maharashtra</li></a>
-            </div>
+            <label for="placeInput">Enter place name:</label>
+            <input type="text" id="placeInput" oninput="updateLink()">
+            <a id="dynamicLink1" href="https://www.google.com/maps/search/Food+suppliers+in+" target="_blank">Click here for Food</a>
+            <a id="dynamicLink2" href="https://www.google.com/maps/search/Water+suppliers+in+" target="_blank">Click here for Water</a>
+        
         </div>
-    </div>  -->
+    </div> 
 </div>
     <footer>
         <div class="foot container-fluid">
