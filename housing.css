@@ -120,6 +120,7 @@ nav li:hover{
     color: black;
     margin-bottom: 8px;
     padding: 6px;
+    align-items: center;
 }
 /* 
 .text{
