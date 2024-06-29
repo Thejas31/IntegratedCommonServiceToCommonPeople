@@ -89,14 +89,27 @@
             </div>
         </div>
 
-        <div class="subServices container Hsub workInProgress"> 
+        <div class="subServices container Fsub"> 
+            <h2>FINANCE</h2>
+            <div class="image container d-flex justify-content-end">
+                <p class="container"><strong>This section will guide you to the world of finance and will act as a guide to manage your finances, ie. from taking loans to insaurances it will try to cover everything according to the needs of common people of India</strong></p>
+                <img src="images_and_icons\finance.png" alt="Finance Image">
+            </div>
+            <div class="nextSign" >
+                <a href="Finance.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/></svg>
+                    CLICK HERE FOR MORE DETAILS
+                </a>
+            </div>
+        </div>
+
+        <div class="subServices container Hsub"> 
             <h2>HEALTHCARE</h2>
             <div class="image container d-flex justify-content-end">
                 <p class="container"><strong>This section will guide you to your nearest healthcare facilities and will give you detailes of medical stores.</strong></p>
                 <img src="images_and_icons\healthcare.png" alt="Transport Image">
             </div>
             <div class="nextSign">
-                <a href="loginPage.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/></svg>
+                <a href="Healthcare.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/></svg>
                     CLICK HERE FOR MORE DETAILS
                 </a>
             </div>
@@ -115,29 +128,23 @@
             </div>
         </div>
 
-        <div class="subServices container Fsub workInProgress"> 
-            <h2>FINANCE</h2>
-            <div class="image container d-flex justify-content-end">
-                <p class="container"><strong>This section will guide you to the world of finance and will act as a guide to manage your finances, ie. from taking loans to insaurances it will try to cover everything according to the needs of common people of India</strong></p>
-                <img src="images_and_icons\finance.png" alt="Finance Image">
-            </div>
-            <div class="nextSign">
-                <a href="loginPage.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/></svg>
-                    CLICK HERE FOR MORE DETAILS
-                </a>
-            </div>
-        </div>
-
-
-
     </div>
 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
+</head>
+<body>
     <footer>
         <div class="foot container-fluid">
             <h1 style="margin-top: 10px;">CONTACT US</h1>
             <p>You can reach us out to make some changes or to add more services by filling us the following form.</p>
             <div class="container main">
-                <form class="Form" action="/submit-form" method="POST">
+                <form id="Form" action="/submit-form" method="POST">
                     <h2 style="margin-top: 10px;">CONTACT US</h2>
                     <input style="margin-top: 10px;" type="text" placeholder="YOUR NAME" name="name" class="Entry" required>
                     <input style="margin-top: 10px;" type="email" placeholder="Enter your Email" name="email" class="Entry" required>
@@ -149,8 +156,11 @@
             </div>
             <p>&copy; 2024 INTEL_Unnati_Industry_Training_Program_Project</p>
         </div>
-        
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
 
     <button onclick="topFunction()" id="topBtn" title="Go to top">Go to Top</button>
 

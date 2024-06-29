@@ -195,7 +195,7 @@ image{
     flex-direction: column;
 }
 
-.Form{
+#Form{
     opacity: 0.9;
     background-image: url("contactUs.webp");
     background-repeat: no-repeat;
@@ -240,7 +240,7 @@ image{
     height: 10pc;
 }
 
-.Form button{
+#Form button{
     border-color:  rgba(15, 30, 30, 0.7) ;
     color: aliceblue;
     background-color: rgba(15, 30, 30, 0.7);
@@ -250,11 +250,11 @@ image{
     display: flex;
     align-items: center;
 }
-.Form button svg{
+#Form button svg{
     margin-left: 6px;
 }
 
-.Form button:hover{
+#Form button:hover{
     border-color:  rgba(15, 30, 30, 0.7) ;
     color: aliceblue;
     background-color: rgb(15, 30, 30);
