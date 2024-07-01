@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rent and Purchase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Packers_Movers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        function showLoginAlert(event) {
+            event.preventDefault();
+            alert("Please Log in First");
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const subsectionLinks = document.querySelectorAll('.subsections a');
+            subsectionLinks.forEach(link => {
+                link.addEventListener('click', showLoginAlert);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: #fff;">House Renting/Purchasing</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="HomePageAfterLogin.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Housing_Services.html">Go Back</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="profile">
+            <a class="dropdown-toggle" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <strong>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg> USER
+                </strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item List" href="homePage.html">LogOut</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="sections container-fluid packersection">
+        
+        <div class="subsections container">
+            <div class="imageAndText">
+                <img src="images_and_icons/squareYards.jpg" style="height: 100px; width: 200px" alt="SquareYards">
+                <h2>SquareYards</h2> 
+            </div>
+            <div class="content">
+                <p>Square Yards is a comprehensive real estate platform that offers a wide range of services for property buyers, sellers, and investors. The website provides detailed listings of residential and commercial properties, including apartments, villas, plots, and office spaces. Users can explore properties through high-quality images, virtual tours, and detailed descriptions.</p>
+            </div>
+            <div class="buttons">
+                <a href="https://www.squareyards.com" target="_blank">Visit Their Website</a>
+                <a href="#">Contact - 1800 208 3344</a>
+            </div>
+        </div>
+
+        <div class="subsections container">
+            <div class="imageAndText">
+                <img src="images_and_icons/housing.jpg" style="height: 100px; width: 200px" alt="Housing">
+                <h2>Housing</h2>
+            </div>
+            <div class="content">
+                <p>Housing.com is a dedicated real estate platform in India that offers detailed information about properties available for rent and purchase. It emphasizes data accuracy and user experience. Provides extensive details including photos, floor plans, amenities, and locality insights.</p>
+            </div>
+            <div class="buttons">
+                <a href="https://housing.com/?gad_source=1&gclid=CjwKCAjw65-zBhBkEiwAjrqRMPsXdpZ8MERb9hstmThxyaOhLoYtLbOiOuf2w03c-UDPY9-loxoHFhoCs30QAvD_BwE" target="_blank">Visit Website</a>
+                <a href="#">Contact - 1800-313-4777</a>
+            </div>
+        </div>
+
+        <div class="subsections container">
+            <div class="imageAndText">
+                <img src="images_and_icons/magicBricks.jpg" style="height: 100px; width: 150px" alt="MagicBricks">
+                <h2>MagicBricks</h2>
+            </div>
+            <div class="content">
+                <p>Magicbricks is one of India's leading property portals that offers a wide array of real estate services. The platform is designed to facilitate the buying, selling, and renting of residential and commercial properties. Offers a large inventory of properties across India, including apartments, houses, commercial spaces, and plots.</p>
+            </div>
+            <div class="buttons">
+                <a href="https://www.magicbricks.com/property-for-sale-rent-in-Hyderabad/residential-real-estate-Hyderabad?mbtracker=google_paid_brand_1_desk_hyderabad&ccode=brand_1_sem&gad_source=1&gclid=CjwKCAjw65-zBhBkEiwAjrqRMLIfwmhwF6e3xhVi3zd2mmhPtJKOb2E4SyR4SI9yiWUBT76mVq4tNhoCtuEQAvD_BwE" target="_blank">Visit Website</a>
+                <a href="#">Contact - 7876400400</a>
+            </div>
+        </div>
+
+        <div class="subsections container">
+            <div class="imageAndText">
+                <img src="images_and_icons/99acres.jpg" style="height: 120px; width: 150px" alt="99 Acres">
+                <h2>99 Acres</h2>
+            </div>
+            <div class="content">
+                <p>99acres is a comprehensive real estate portal that serves as a marketplace for property buyers, sellers, and renters in India. It covers residential, commercial, and industrial properties. Provides detailed property reports, locality insights, and market trends.</p>
+            </div>
+            <div class="buttons">
+                <a href="https://www.99acres.com/Hyderabad-Real-Estate.htm?nn_account=Google_99acres-brand&nn_campaign=1654065244_63819327792_378554205722&nn_medium=1654065244_63819327792_378554205722&nn_adtype=g_&nn_keyword=99acres&nn_placement=&gad_source=1&gclid=CjwKCAjw65-zBhBkEiwAjrqRMNqC4O5VGML0rmbftZUPd-5sHnHLbdJmHkVooOT53Gw11c9FwQlouRoCY1QQAvD_BwE" target="_blank">Visit Website</a>
+                <a href="#">Contact - 1800-41-99099</a>
+            </div>
+        </div>
+
+        <div class="subsections container">
+            <div class="imageAndText">
+                <img src="images_and_icons/propertyWala.jpg" style="height: 120px; width: 200px" alt="PropertyWala">
+                <h2>PropertyWala</h2>
+            </div>
+            <div class="content">
+                <p>PropertyWala.com is an online real estate marketplace that offers listings of residential and commercial properties across India. The platform provides detailed property information, including photos, videos, and locality insights. Users can search for properties based on their preferences and requirements.</p>
+            </div>
+            <div class="buttons">
+                <a href="https://www.propertywala.com/" target="_blank">Visit Their Website</a>
+                <a href="#">Contact - 9555086960</a>
+            </div>
+        </div>
+
+        <div class="subsections container">
+            <div class="imageAndText">
+                <img src="images_and_icons/zoopla.jpg" style="height: 120px; width: 150px" alt="Zoopla">
+                <h2>Zoopla</h2>
+            </div>
+            <div class="content">
+                <p>Zoopla is a property website in the United Kingdom that provides users with information about properties available for sale and rent. The website also offers value estimates and historical price trends for properties. Users can search for properties by location and view detailed descriptions, photos, and floor plans.</p>
+            </div>
+            <div class="buttons">
+                <a href="https://www.zoopla.co.uk/" target="_blank">Visit Their Website</a>
+                <a href="#">Contact - 0800 916 7079</a>
+            </div>
+        </div>
+
+        <div class="subsections container">
+            <div class="imageAndText">
+                <img src="images_and_icons/rightmove.jpg" style="height: 120px; width: 150px" alt="Rightmove">
+                <h2>Rightmove</h2>
+            </div>
+            <div class="content">
+                <p>Rightmove is a UK-based real estate website that enables users to buy, sell, and rent properties. It offers a comprehensive database of properties across the UK, including houses, apartments, and commercial properties. Users can search for properties by location and access detailed information, photos, and floor plans.</p>
+            </div>
+            <div class="buttons">
+                <a href="https://www.rightmove.co.uk/" target="_blank">Visit Their Website</a>
+                <a href="#">Contact - 0800 074 8585</a>
+            </div>
+        </div>
+
+    </div>
+  
+    <footer>
+        <div class="foot container">
+            <div style="text-align: center;">
+                <h1 style="margin-top: 10px;">CONTACT US</h1>
+                <p>You can reach us to make changes or add more services by filling out the form below.</p>
+            </div>
+            <div class="container main">
+                <form class="Form" action="/submit-form" method="POST">
+                    <input style="margin-top: 10px;" type="text" placeholder="YOUR NAME" name="name" class="Entry" required>
+                    <input style="margin-top: 10px;" type="email" placeholder="Enter your Email" name="email" class="Entry" required>
+                    <textarea style="margin-top: 10px;" name="message" placeholder="Enter your suggestion or queries" class="textA"></textarea>
+                    <button type="submit" class="btn btn-primary">Submit<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg></button>
+                </form>
+                <p style="text-align: left; margin-top: 20px;">&copy; 2024 Housing Services Portal - ConnectGen</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Go to Top</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

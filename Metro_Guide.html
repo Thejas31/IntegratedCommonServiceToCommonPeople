@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Transport.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        .nearest-metro-btn {
+            position: middle;
+            top: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            z-index: 1000;
+        }
+        .nearest-metro-btn:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <h1 class="navbar-brand"> My Metro Guide </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="HomePageAfterLogin.html" target="_blank">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="transport.html" target="_blank">Transport</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Healthcare.html" target="_blank">Healthcare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Government_Services.html" target="_blank">Govt. Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Housing_Services.html" target="_blank">House services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Monthly_Budget.html" target="_blank">Plan Monthly Budget</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="profile">
+            <a class="dropdown-toggle" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <strong>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg> USER 
+                </strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item List" href="homePage.html">LogOut</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <button class="nearest-metro-btn" onclick="location.href='https://www.google.com/maps/search/metro+near+me'">Find Nearest Metro</button>
+
+    <div class="sections container-fluid metroSection">
+        
+        <div class="subsections container dMetro">
+            <div class="imageAndText">
+                <h2>DELHI METRO</h2>
+                <img src="images_and_icons\delhimetro.png" alt="">
+            </div>
+            <div class="buttons">
+                <a href="https://www.delhimetrorail.com/map">View Map</a>
+                <a href="https://www.delhimetrorail.com/">Visit Delhi Metro website</a>
+            </div>
+        </div>
+
+        <div class="subsections container kMetro">
+            <div class="imageAndText">
+                <h2>KOLKATA METRO</h2>
+                <img src="images_and_icons\kolkatametro.png" alt="">
+            </div>
+            <div class="buttons">
+                <a href="https://mtp.indianrailways.gov.in/view_section.jsp?lang=0&id=0,1,285">View Map</a>
+                <a href="https://mtp.indianrailways.gov.in/">Visit Kolkata Metro website</a>
+            </div>
+        </div>
+
+
+        <div class="subsections container jMetro">
+            <div class="imageAndText">
+                <h2>JAIPUR METRO</h2>
+                <img src="images_and_icons\jaipurMetro.png" alt="">
+            </div>
+            <div class="buttons">
+                <a href="https://transport.rajasthan.gov.in/content/transportportal/en/metro/PassengerInformation/MetroStations.html">View Map and Stations</a>
+                <a href="https://transport.rajasthan.gov.in/jmrc/">Visit Jaipur Metro website</a>
+            </div>
+        </div>
+
+        <div class="subsections container nMetro">
+            <div class="imageAndText">
+                <h2>NOIDA METRO</h2>
+                <img src="images_and_icons\NoidaMetroLogo.png" alt="">
+            </div>
+            <div class="buttons">
+                <a href="https://nmrcnoida.com/PassengerInformation/RouteMap">View Map and Stations</a>
+                <a href="https://nmrcnoida.com/">Visit Noida Metro website</a>
+            </div>
+        </div>
+
+        <div class="subsections container aMetro">
+            <div class="imageAndText">
+                <h2>AHMEDABAD METRO</h2>
+                <img src="images_and_icons\ahmedabadmetro.png" alt="" style="height: 80px; width: 200px">
+            </div>
+            <div class="buttons">
+                <a href="https://www.gujaratmetrorail.com/ahmedabad/route-map/?doing_wp_cron=1718028160.7863070964813232421875">View Map and Stations</a>
+                <a href="https://www.gujaratmetrorail.com/?doing_wp_cron=1718028118.9544060230255126953125">Visit Ahmedabad Metro website</a>
+            </div>
+        </div>
+
+        <div class="subsections container lMetro">
+            <div class="imageAndText">
+                <h2>LUCKNOW METRO</h2>
+                <img src="images_and_icons\lucknowMetro.png" alt="" >
+            </div>
+            <div class="buttons">
+                <a href="https://lmrcl.com/passengerinfo/lucknow-metro-route-map/">View Map and Stations</a>
+                <a href="https://lmrcl.com/">Visit Lucknow Metro website</a>
+            </div>
+        </div>
+
+        <div class="subsections container NMetro">
+            <div class="imageAndText">
+                <h2>NAGPUR METRO</h2>
+                <img src="images_and_icons\nagpurMetro.png" alt="" >
+            </div>
+            <div class="buttons">
+                <a href="https://www.metrorailnagpur.com/network-map">View Map and Stations</a>
+                <a href="https://www.metrorailnagpur.com/">Visit Nagpur Metro website</a>
+            </div>
+        </div>
+
+        <div class="subsections container mMetro">
+            <div class="imageAndText">
+                <h2>MUMBAI METRO</h2>
+                <img src="images_and_icons\mumbai-metro-logo-05.png" alt="" >
+            </div>
+            <div class="buttons">
+                <a href="https://www.reliancemumbaimetro.com/metro-train-schedule#">View Schedule</a>
+                <a href="https://www.reliancemumbaimetro.com/">Visit Mumbai Metro website</a>
+            </div>
+        </div>
+
+        <div class="subsections container hMetro">
+            <div class="imageAndText">
+                <h2>HYDERABAD METRO</h2>
+                <img src="images_and_icons\hyderabadMetro.png" alt="" >
+            </div>
+            <div class="buttons">
+                <a href="https://www.ltmetro.com/metro-network-map/">View Map</a>
+                <a href="https://www.ltmetro.com/">Visit Hyderabad Metro website</a>
+            </div>
+        </div>
+
+        <div class="subsections container bMetro">
+            <div class="imageAndText">
+                <h2>BANGALORE METRO</h2>
+                <img src="images_and_icons\namma-metro-logo-0FFC2EC52C-seeklogo.com.png" alt="" >
+            </div>
+            <div class="buttons">
+                <a href="https://english.bmrc.co.in/schematic-route-map/">View Map</a>
+                <a href="https://english.bmrc.co.in/">Visit Bangalore Metro website</a>
+            </div>
+        </div>
+
+
+        <div class="subsections container KMetro">
+            <div class="imageAndText">
+                <h2>KOCHI METRO</h2>
+                <img src="images_and_icons\kochiMetro.png" alt="" >
+            </div>
+            <div class="buttons">
+                <a href="https://kochimetro.org/know-your-kochi-metro-map-with-routes-stops-and-journey-time/">View Map</a>
+                <a href="https://kochimetro.org/">Visit Kochi Metro website</a>
+            </div>
+        </div>
+
+        <div class="subsections container cMetro">
+            <div class="imageAndText">
+                <h2>CHENNAI METRO</h2>
+                <img src="images_and_icons\chennaiMetro.png" alt="" >
+            </div>
+            <div class="buttons">
+                <a href="https://wcag.chennaimetrorail.org/schematic-map/">View Map</a>
+                <a href="https://chennaimetrorail.org/">Visit Chennai Metro website</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot container-fluid">
+            <h1 style="margin-top: 10px;">CONTACT US</h1>
+            <p>You can reach us out to make some changes or to add more services by filling us the following form.</p>
+            <div class="container main">
+                <form class="Form" action="/submit-form" method="POST">
+                  
+                    <input style="margin-top: 10px;" type="text" placeholder="YOUR NAME" name="name" class="Entry" required>
+                    <input style="margin-top: 10px;" type="email" placeholder="Enter your Email" name="email" class="Entry" required>
+                    <textarea style="margin-top: 10px;" name="message" placeholder="Enter your suggestion or queries" class="textA"></textarea>
+                    <button type="submit">Submit<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg></button>
+                </form>
+            </div>
+            <p>&copy; 2024 Transport Services Portal - INTEL_Project</p>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Go to Top</button>
+</body>
+</html>

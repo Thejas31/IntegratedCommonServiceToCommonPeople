@@ -1,0 +1,329 @@
+body {
+    background-color: #b9b9b9; /* Light grey background */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif; /* Standard sans-serif font */
+    color: #171717; /* Dark grey text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1ff8; /* Dark background */
+    padding: 1rem 2rem;
+    border-bottom: 3px solid #4db8ff; /* Blue border */
+    color: #fff; /* White text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    font-size: 28px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    color: #fff; /* Text color */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1.25px; /* Adjust letter spacing for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transform and color effects */
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1); /* Scale effect on hover for depth */
+    color: #f8f4cd; /* New color on hover */
+}
+
+.nav-link {
+    font-size: 15px; /* Font size */
+    font-weight: 500; /* Normal font weight */
+    color: #fff; /* Text color */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Adjust letter spacing for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+    margin-right: 15px; /* Margin for spacing between links */
+}
+
+.nav-link:hover {
+    transform: scale(1.1); /* Scale effect on hover for depth */
+    color: #e6e09a; /* New color on hover */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Light border */
+    background-color: #4db8ff; /* Blue background */
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Make icon white */
+}
+
+.profile {
+    margin-left: auto;
+}
+
+.profile a {
+    border: 1px solid #4db8ff; /* Blue border */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #1a1a1a; /* Dark background */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+.profile a:hover {
+    background-color: #4db8ff; /* Blue background */
+    border-color: #1a1a1a; /* Dark border */
+}
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.95); /* Light background with some transparency */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #4db8ff; /* Blue background */
+    border-color: #0056b3; /* Darker blue border */
+    color: #fff;
+}
+
+@media only screen and (max-width: 425px) {
+    header {
+        width: 100%;
+    }
+
+    .subsections {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header {
+        width: 100%;
+    }
+
+    .subsections {
+        width: 100%;
+    }
+}
+
+.subsections {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; /* White background */
+    width: 90%;
+    max-width: 1500px;
+    border: 1px solid #8e8e8e; /* Grey border */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Box shadow */
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.imageButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000; /* Black text */
+    border-radius: 10px;
+    background-color: rgba(255, 252, 252, 0.385);
+    padding: 10px;
+    border: 1px solid;
+    transition: transform 0.3s, border-color 0.3s, background-color 0.3s;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.218);
+    margin: 5px;
+    width: fit-content;
+}
+
+.buttons svg {
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.buttons a:hover {
+    background-color: rgb(0, 148, 182);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.649);
+}
+
+.railway {
+    background-color: #e0ffff; /* Azure background */
+}
+
+.Sbus {
+    background-color: #f6e8dd; /* Light background */
+}
+
+.listImage {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.listImage img {
+    width: 30%;
+}
+
+.list a {
+    color: #000; /* Black text */
+}
+
+.list a:hover {
+    color: #820d0d; /* Dark red text on hover */
+    font-size: large;
+    font-weight: bold;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.linkImage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.linkImage img {
+    width: 80px;
+}
+
+.imageAndText {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+.imageAndText img {
+    margin: 2px 10px 2px 2px;
+}
+
+.imageAndText h2 {
+    margin-top: 25px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.services a {
+    border: solid 2px transparent;
+    border-radius: 5px;
+    background-color: rgba(168, 168, 168, 0.8);
+}
+
+.foot {
+    padding: 2%;
+    margin-top: 20px;
+    border: 1px solid;
+    background-color: #202020; /* Dark background */
+    color: #fff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foot h1, .foot h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem; /* Larger font size */
+    color: #fff; /* White text */
+}
+
+.foot p {
+    margin-bottom: 20px;
+    font-size: 1rem; /* Standard font size */
+    color: #ccc; /* Lighter grey text */
+}
+
+.Form {
+    color: #171717; /* Dark grey text */
+    background-color: rgba(255, 255, 255, 0.95); /* Light background with some transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    opacity: 0.9;
+    background-image: url("contactUs.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.Entry {
+    background-color: rgba(240, 248, 255, 0.579); /* Light background */
+    height: 40px;
+    border: 1px solid #bbb; /* Darker grey border */
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.Entry:hover {
+    background-color: rgba(240, 248, 255, 0.8); /* Lighter background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+}
+
+.SendButton {
+    background-color: #4db8ff; /* Blue background */
+    color: #fff; /* White text */
+    border: 1px solid #4db8ff; /* Blue border */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.SendButton:hover {
+    background-color: #1a8cd8; /* Darker blue background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons a {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .imageAndText {
+        flex-direction: column;
+        align-items: center;
+    }
+}
